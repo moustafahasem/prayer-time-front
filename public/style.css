@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Fustat", sans-serif;
+    /* height: 100vh */
+    /* background-image: url(prayerIMG.jpg); */
+    direction: rtl;
+    background-color: transparent;
+}
+::selection{
+    color: whitesmoke;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: whitesmoke;
+}
+/* Scroll Bar */
+
+.heading h1{
+    color: white;
+    text-shadow: 4px 4px 24px rgba(0,0,0,0.62);
+    margin-right: 58px;
+    font-size: 59px;
+    margin-bottom: 11px;
+
+}
+.heading p{
+    color:white;
+    margin-right: 58px;
+    font-size: 19px;
+}
+.cards{
+    height: auto;   
+    margin-top: 155px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    width: 12%;
+    height: 200px;
+    background-color: transparent;
+}
+.head{
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+}
+.head h1{
+    font-weight: 300;
+}
+.card h1{
+    text-align: center;
+}
+.card .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('prayerIMG.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+}
+.select_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select_btn select{
+    width: 110px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-family: 'Fustat';
+}
+.select_btn select option{
+    /* background-color: transparent; */
+    color: black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 40px;
+        margin-right: 20px;
+    }
+    .heading p {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .select_btn select {
+        width: 19%;
+        position: fixed;
+        bottom: 0;
+    }
+}

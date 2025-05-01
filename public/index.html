@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Time</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background"></div>
+    <div class="heading">
+        <h1 id="CityNAme">مكة المكرمة</h1>
+        <p id="Date">الجمعه 24 نوفمبر</p>
+    </div>
+
+    <div class="cards">
+        <!-- card 1 -->
+        <div class="card">
+            <div class="head">
+                <h1>الفجر</h1>
+            </div>
+            <div class="body">
+                <h1 class="time" id="fajr-time">
+                    04:30
+                </h1>
+            </div>
+        </div>
+        <!-- END card 1 -->
+
+        <!-- card 2 -->
+        <div class="card">
+            <div class="head">
+                <h1>الشروق</h1>
+            </div>
+            <div class="body">
+                <h1 class="time" id="sunrise-time">
+                    04:30
+                </h1>
+            </div>
+        </div>
+        <!-- END card 2 -->
+
+        <!-- card 3 -->
+        <div class="card">
+            <div class="head">
+                <h1>الظهر</h1>
+            </div>
+            <div class="body">
+                <h1 class="time" id="dhurh-time">
+                    04:30
+                </h1>
+            </div>
+        </div>
+        <!-- END card 3 -->
+
+        <!-- card 4 -->
+        <div class="card">
+            <div class="head">
+                <h1>العصر</h1>
+            </div>
+            <div class="body">
+                <h1 class="time" id="asr-time">
+                    04:30
+                </h1>
+            </div>
+        </div>
+        <!-- END card 4 -->
+
+        <!-- card 5 -->
+        <div class="card">
+            <div class="head">
+                <h1>المغرب</h1>
+            </div>
+            <div class="body">
+                <h1 class="time" id="sunset-time">
+                    04:30
+                </h1>
+            </div>
+        </div>
+        <!-- END card 5 -->
+
+        <!-- card 6 -->
+        <div class="card">
+            <div class="head">
+                <h1>العشاء</h1>
+            </div>
+            <div class="body">
+                <h1 class="time" id="isha-time">
+                    04:30
+                </h1>
+            </div>
+        </div>
+        <!-- END card 6 -->
+    </div>
+
+    <div class="select_btn">
+        <select name="" id="cities_select">
+        </select>
+    </div>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+
+</html>
